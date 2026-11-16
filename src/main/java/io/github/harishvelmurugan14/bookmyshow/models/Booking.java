@@ -12,6 +12,8 @@ import java.util.List;
 public class Booking extends BaseModel {
     @ManyToOne
     private User user;
+    @ManyToOne
+    private Show show;
     @ManyToMany
     private List<ShowSeat> showSeats;
     @Enumerated(EnumType.ORDINAL)
